@@ -1,6 +1,5 @@
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.commands.SetValue;
+
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -17,6 +16,7 @@ public class SelenideTest {
         $("[data-test-id=agreement]").click();
         $("button").click();
         $(".Success_successBlock__2L3Cw").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+
 
 
     }
