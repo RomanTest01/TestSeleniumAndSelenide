@@ -7,7 +7,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class SelenideTest {
+
     @Test
+
     void AppOrderTest() {
         open("http://localhost:9999/");
         $("[data-test-id=name] input").setValue("Никитин Никита");
