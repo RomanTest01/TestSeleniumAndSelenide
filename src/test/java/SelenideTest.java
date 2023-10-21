@@ -14,7 +14,7 @@ public class SelenideTest {
         $("[data-test-id=phone] input").setValue("+79990000000");
         $("[data-test-id=agreement]").click();
         $("button").click();
-        $(".Success_successBlock__2L3Cw").shouldHave(Condition.exactText("Ваша заявка  отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $(".Success_successBlock__2L3Cw").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
 
     }
