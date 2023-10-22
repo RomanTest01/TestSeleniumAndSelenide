@@ -9,13 +9,13 @@ public class SelenideTest {
 
     @Test
 
-    void AppOrderTest() {
+    void appOrderTest() {
         open("http://localhost:9999/");
         $("[data-test-id=name] input").setValue("Никитин Никита");
         $("[data-test-id=phone] input").setValue("+79990000000");
         $("[data-test-id=agreement]").click();
         $("button").click();
-        $(".Success_successBlock__2L3Cw").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id='order-success']").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
 
 
